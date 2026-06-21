@@ -4,190 +4,201 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Dinesh Kumar | Cloud Architect</title>
+<title>Dinesh Kumar | Cloud Architect Portfolio</title>
 
-<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
 
-<style>
+<!-- BOX ICONS -->
+<link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-/* ===== YOUR CSS ADDED ===== */
+<!-- SCROLL REVEAL -->
+<script src="https://unpkg.com/scrollreveal"></script>
 
-body{
-margin:0;
-font-family:Arial;
-background:#0f172a;
-color:white;
-}
-
-header{
-background:#1e293b;
-padding:15px;
-position:sticky;
-top:0;
-z-index:1000;
-}
-
-.nav__menu{
-display:flex;
-gap:20px;
-list-style:none;
-justify-content:center;
-padding:0;
-}
-
-.nav__menu a{
-color:white;
-text-decoration:none;
-}
-
-section{
-padding:60px 20px;
-max-width:900px;
-margin:auto;
-}
-
-h2{
-color:#38bdf8;
-}
-
-ul li{
-margin:5px 0;
-}
-
-/* ===== EXTRA CLEAN UI IMPROVEMENTS ===== */
-
-h1,h3{
-text-align:center;
-}
-
-a{
-color:#38bdf8;
-text-decoration:none;
-font-weight:bold;
-}
-
-.center{
-text-align:center;
-}
-
-.card{
-background:#1e293b;
-padding:20px;
-border-radius:10px;
-margin-top:15px;
-}
-
-footer{
-text-align:center;
-padding:20px;
-background:#0f172a;
-border-top:1px solid #1e293b;
-margin-top:40px;
-}
-
-</style>
 </head>
 
 <body>
 
-<!-- HEADER -->
-<header>
-<h1 class="center">Dinesh Kumar</h1>
-<p class="center">Senior Cloud & DevOps Engineer</p>
+<!--===== HEADER =====-->
+<header class="l-header">
+<nav class="nav bd-grid">
 
-<ul class="nav__menu">
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#experience">Experience</a></li>
-<li><a href="#contact">Contact</a></li>
+<div>
+<a href="#" class="nav__logo">Dinesh Kumar</a>
+</div>
+
+<div class="nav__menu" id="nav-menu">
+<ul class="nav__list">
+
+<li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+<li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+<li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+<li class="nav__item"><a href="#work" class="nav__link">Experience</a></li>
+<li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+
 </ul>
+</div>
+
+<div class="nav__toggle" id="nav-toggle">
+<i class='bx bx-menu'></i>
+</div>
+
+</nav>
 </header>
 
-<!-- HOME -->
-<section id="home">
-<div class="center">
-<h2>Cloud Architect Portfolio</h2>
-<p>
-Azure | AWS | Kubernetes | Terraform | Linux SME
-</p>
+<main class="l-main">
+
+<!--===== HOME =====-->
+<section class="home bd-grid" id="home">
+
+<div class="home__data">
+
+<h1 class="home__title">
+Hi,<br>I’m <span class="home__title-color">Dinesh Kumar</span><br>
+Cloud Architect
+</h1>
 
 <p>
-10+ Years Experience in Cloud Infrastructure & DevOps Automation
+Azure | AWS | Kubernetes | Linux SME | DevOps Engineer
 </p>
+
+<a href="#contact" class="button">Contact</a>
+
+</div>
+
+<div class="home__social">
+<a href="https://www.linkedin.com/in/dineshkumar2711/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+<a href="#" class="home__social-icon"><i class='bx bxl-github'></i></a>
+</div>
+
+</section>
+
+<!--===== ABOUT =====-->
+<section class="about section" id="about">
+
+<h2 class="section-title">About</h2>
+
+<div class="about__container bd-grid">
+
+<div class="about__img">
+<img src="assets/img/about.jpg" alt="">
+</div>
+
+<div>
+
+<h2 class="about__subtitle">Cloud & DevOps Engineer</h2>
+
+<p class="about__text">
+Experienced Senior Cloud & DevOps Engineer with 10+ years in Linux, AWS, Azure,
+Kubernetes, Terraform, Ansible, CI/CD pipelines, and enterprise infrastructure.
+Specialized in building scalable, secure cloud systems.
+</p>
+
+</div>
+
 </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about">
-<h2>ABOUT ME</h2>
-<div class="card">
-Experienced Senior Cloud & DevOps Engineer with 10+ years in Linux,
-Cloud Infrastructure, DevOps Automation, Data Center Operations,
-and Enterprise Systems.
+<!--===== SKILLS =====-->
+<section class="skills section" id="skills">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="skills__container bd-grid">
+
+<div>
+
+<h2 class="skills__subtitle">Technical Skills</h2>
+
+<div class="skills__text">
+Cloud, DevOps, Automation & Infrastructure expertise.
 </div>
+
+<p>Azure | AWS | GCP</p>
+<p>Kubernetes | Docker</p>
+<p>Terraform | Ansible | Jenkins</p>
+<p>Linux (RHEL, Ubuntu, CentOS, SUSE)</p>
+<p>VMware | Nutanix</p>
+<p>Grafana | Nagios</p>
+
+</div>
+
+<div>
+<img src="assets/img/work3.jpg" class="skills__img">
+</div>
+
+</div>
+
 </section>
 
-<!-- SKILLS -->
-<section id="skills">
-<h2>CORE SKILLS</h2>
+<!--===== WORK =====-->
+<section class="work section" id="work">
 
-<div class="card">
-<ul>
-<li>Azure</li>
-<li>AWS</li>
-<li>GCP</li>
-<li>Terraform</li>
-<li>Ansible</li>
-<li>Kubernetes</li>
-<li>Docker</li>
-<li>Jenkins</li>
-<li>Git</li>
-<li>Linux (RHEL, Ubuntu, CentOS, SUSE, AIX)</li>
-<li>Grafana</li>
-<li>Nagios</li>
-<li>VMware</li>
-<li>Nutanix</li>
-</ul>
-</div>
-</section>
+<h2 class="section-title">Experience</h2>
 
-<!-- EXPERIENCE -->
-<section id="experience">
-<h2>EXPERIENCE</h2>
+<div class="work__container bd-grid">
 
-<div class="card">
+<div>
 <h3>Fulcrum Digital</h3>
-<p>Senior Cloud & DevOps Engineer | 2024 – Present</p>
+<p>Senior Cloud & DevOps Engineer (2024 - Present)</p>
 </div>
 
-<div class="card">
+<div>
 <h3>Precision Informatics</h3>
-<p>Senior Linux Engineer | 2024</p>
+<p>Senior Linux Engineer (2024)</p>
 </div>
 
-<div class="card">
+<div>
 <h3>Cygnus Softek</h3>
-<p>System Administrator | 2016 – 2024</p>
+<p>System Administrator (2016 - 2024)</p>
+</div>
+
 </div>
 
 </section>
 
-<!-- CONTACT -->
-<section id="contact">
-<h2>CONTACT</h2>
+<!--===== CONTACT =====-->
+<section class="contact section" id="contact">
 
-<div class="card">
-<p>Email: <a href="mailto:dineshvelmsc@gmail.com">dineshvelmsc@gmail.com</a></p>
-<p>Phone: +91 7904413667</p>
-<p>LinkedIn: <a href="https://www.linkedin.com/in/dineshkumar2711/" target="_blank">Profile</a></p>
+<h2 class="section-title">Contact</h2>
+
+<div class="contact__container bd-grid">
+
+<p>Email: <b>dineshvelmsc@gmail.com</b></p>
+<p>Phone: <b>+91 7904413667</b></p>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/dineshkumar2711/">Profile</a></p>
+
 </div>
 
 </section>
 
-<footer>
-© 2026 Dinesh Kumar | Cloud & DevOps Engineer
+</main>
+
+<!--===== FOOTER =====-->
+<footer class="footer">
+
+<p class="footer__title">Dinesh Kumar</p>
+
+<div class="footer__social">
+<a href="#" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+<a href="#" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+<a href="#" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+</div>
+
+<p class="footer__copy">© 2026 Dinesh Kumar | Cloud Architect</p>
+
 </footer>
+
+<!-- SCROLL REVEAL ANIMATION -->
+<script>
+ScrollReveal().reveal('.home__data, .about__img, .skills__img, .work div, .contact__container', {
+delay:200,
+distance:'50px',
+origin:'bottom'
+});
+</script>
+
+<!-- MAIN JS -->
+<script src="assets/js/main.js"></script>
 
 </body>
 </html>
