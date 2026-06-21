@@ -10,7 +10,7 @@
 
 <style>
 
-/* ================= GLOBAL ================= */
+/* ================= BASE ================= */
 
 *{
 margin:0;
@@ -25,30 +25,27 @@ color:#fff;
 overflow-x:hidden;
 }
 
-/* ================= BACKGROUND GLOW ================= */
+/* ================= BACKGROUND ================= */
 
-.bg-glow{
-position:fixed;
-width:600px;
-height:600px;
-background:radial-gradient(circle,#38bdf8,transparent 60%);
-filter:blur(120px);
-opacity:0.3;
-top:-200px;
-left:-200px;
-z-index:-1;
-}
-
-.bg-glow2{
+.bg1,.bg2{
 position:fixed;
 width:500px;
 height:500px;
-background:radial-gradient(circle,#6366f1,transparent 60%);
 filter:blur(120px);
-opacity:0.25;
-bottom:-150px;
-right:-150px;
 z-index:-1;
+opacity:0.3;
+}
+
+.bg1{
+background:radial-gradient(circle,#38bdf8,transparent 60%);
+top:-200px;
+left:-200px;
+}
+
+.bg2{
+background:radial-gradient(circle,#6366f1,transparent 60%);
+bottom:-200px;
+right:-200px;
 }
 
 /* ================= HEADER ================= */
@@ -80,7 +77,6 @@ margin-left:20px;
 color:#cbd5e1;
 text-decoration:none;
 font-size:14px;
-transition:0.3s;
 }
 
 nav a:hover{
@@ -94,7 +90,7 @@ min-height:100vh;
 display:flex;
 align-items:center;
 justify-content:space-between;
-padding:120px 10% 60px;
+padding:120px 10%;
 gap:40px;
 }
 
@@ -103,7 +99,7 @@ max-width:600px;
 }
 
 .hero-left h1{
-font-size:3.8rem;
+font-size:3.5rem;
 line-height:1.1;
 }
 
@@ -114,7 +110,7 @@ background:linear-gradient(90deg,#38bdf8,#6366f1);
 }
 
 .hero-left p{
-margin-top:20px;
+margin-top:15px;
 color:#94a3b8;
 line-height:1.6;
 }
@@ -133,48 +129,61 @@ border-radius:10px;
 text-decoration:none;
 font-weight:600;
 font-size:14px;
-transition:0.3s;
 }
 
-.btn-primary{
+.primary{
 background:linear-gradient(90deg,#38bdf8,#6366f1);
-color:#000;
+color:black;
 }
 
-.btn-outline{
+.outline{
 border:1px solid #38bdf8;
 color:#38bdf8;
 }
 
-.btn:hover{
-transform:translateY(-3px);
+/* ================= IMAGE CARD ================= */
+
+.hero-right{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:20px;
 }
 
-/* ================= RIGHT DASH CARD ================= */
-
-.dashboard{
+.profile-card{
 background:rgba(255,255,255,0.03);
 border:1px solid rgba(255,255,255,0.08);
 padding:25px;
 border-radius:20px;
+text-align:center;
 backdrop-filter:blur(10px);
-box-shadow:0 20px 60px rgba(0,0,0,0.4);
-width:320px;
 }
 
-.dashboard h3{
-color:#38bdf8;
+.profile-card img{
+width:180px;
+height:180px;
+border-radius:50%;
+object-fit:cover;
+border:3px solid #38bdf8;
 margin-bottom:15px;
 }
 
+/* TAGS */
+
+.tags{
+display:flex;
+flex-wrap:wrap;
+gap:8px;
+justify-content:center;
+}
+
 .tag{
-display:inline-block;
+font-size:12px;
 padding:5px 10px;
 border-radius:20px;
-font-size:12px;
-margin:5px;
 background:rgba(56,189,248,0.1);
 color:#38bdf8;
+border:1px solid rgba(56,189,248,0.3);
 }
 
 /* ================= SECTIONS ================= */
@@ -191,7 +200,7 @@ background:linear-gradient(90deg,#38bdf8,#6366f1);
 -webkit-text-fill-color:transparent;
 }
 
-/* ================= GRID ================= */
+/* GRID */
 
 .grid{
 display:grid;
@@ -208,11 +217,11 @@ transition:0.3s;
 }
 
 .card:hover{
-transform:translateY(-10px) scale(1.02);
+transform:translateY(-10px);
 border-color:#38bdf8;
 }
 
-/* ================= EXPERIENCE ================= */
+/* TIMELINE */
 
 .timeline{
 border-left:2px solid #38bdf8;
@@ -223,16 +232,16 @@ padding-left:20px;
 margin-bottom:20px;
 }
 
-/* ================= CONTACT ================= */
+/* CONTACT */
 
 .contact{
 background:rgba(255,255,255,0.03);
-padding:30px;
+padding:25px;
 border-radius:15px;
 border:1px solid rgba(255,255,255,0.08);
 }
 
-/* ================= FOOTER ================= */
+/* FOOTER */
 
 footer{
 text-align:center;
@@ -241,7 +250,7 @@ color:#94a3b8;
 background:#020617;
 }
 
-/* ================= RESPONSIVE ================= */
+/* RESPONSIVE */
 
 @media(max-width:900px){
 .hero{
@@ -250,15 +259,11 @@ text-align:center;
 }
 
 .hero-left h1{
-font-size:2.6rem;
+font-size:2.5rem;
 }
 
 nav{
 display:none;
-}
-
-.btns{
-justify-content:center;
 }
 }
 
@@ -267,9 +272,9 @@ justify-content:center;
 
 <body>
 
-<!-- BACKGROUND EFFECTS -->
-<div class="bg-glow"></div>
-<div class="bg-glow2"></div>
+<!-- BACKGROUND -->
+<div class="bg1"></div>
+<div class="bg2"></div>
 
 <!-- HEADER -->
 <header>
@@ -288,34 +293,40 @@ justify-content:center;
 <div class="hero-left">
 
 <h1>
-Cloud <span>Architect</span><br>
-Dinesh Kumar
+Hi, I'm <span>Dinesh Kumar</span>
 </h1>
 
 <p>
-Senior Cloud & DevOps Engineer with 10+ years experience in
-AWS, Azure, Kubernetes, Terraform, Ansible and enterprise infrastructure automation.
+Senior Cloud & DevOps Engineer with 10+ years experience in AWS, Azure,
+Kubernetes, Terraform, Ansible and Linux infrastructure automation.
 </p>
 
 <div class="btns">
-<a href="mailto:dineshvelmsc@gmail.com" class="btn btn-primary">Contact Me</a>
-<a href="https://www.linkedin.com/in/dineshkumar2711/" class="btn btn-outline">LinkedIn</a>
+<a class="btn primary" href="mailto:dineshvelmsc@gmail.com">Contact</a>
+<a class="btn outline" href="https://www.linkedin.com/in/dineshkumar2711/">LinkedIn</a>
 </div>
 
 </div>
 
-<div class="dashboard">
+<div class="hero-right">
 
-<h3>Tech Stack</h3>
+<div class="profile-card">
 
+<!-- 👇 YOUR IMAGE HERE -->
+<img src="assets/img/profile.png" alt="Dinesh Kumar">
+
+<h3>Dinesh Kumar</h3>
+<p>Cloud Architect</p>
+
+</div>
+
+<div class="tags">
 <span class="tag">AWS</span>
 <span class="tag">Azure</span>
-<span class="tag">GCP</span>
 <span class="tag">Kubernetes</span>
 <span class="tag">Terraform</span>
-<span class="tag">Ansible</span>
-<span class="tag">Docker</span>
 <span class="tag">Linux</span>
+</div>
 
 </div>
 
@@ -324,13 +335,13 @@ AWS, Azure, Kubernetes, Terraform, Ansible and enterprise infrastructure automat
 <!-- SKILLS -->
 <section id="skills">
 
-<h2 class="title">Core Expertise</h2>
+<h2 class="title">Skills</h2>
 
 <div class="grid">
 
 <div class="card">
 <h3>Cloud</h3>
-<p>AWS, Azure, GCP Architecture</p>
+<p>AWS, Azure, GCP</p>
 </div>
 
 <div class="card">
@@ -340,12 +351,12 @@ AWS, Azure, Kubernetes, Terraform, Ansible and enterprise infrastructure automat
 
 <div class="card">
 <h3>Containers</h3>
-<p>Kubernetes, Docker, Microservices</p>
+<p>Docker, Kubernetes</p>
 </div>
 
 <div class="card">
 <h3>Linux</h3>
-<p>RHEL, Ubuntu, CentOS, SUSE</p>
+<p>RHEL, Ubuntu, CentOS</p>
 </div>
 
 </div>
@@ -366,12 +377,12 @@ AWS, Azure, Kubernetes, Terraform, Ansible and enterprise infrastructure automat
 
 <div>
 <h3>Precision Informatics</h3>
-<p>Senior Linux Support Engineer (2022 -2024)</p>
+<p>Senior Linux Engineer (2024)</p>
 </div>
 
 <div>
 <h3>Cygnus Softek</h3>
-<p>System Administrator (2016 - 2022)</p>
+<p>System Administrator (2016 - 2024)</p>
 </div>
 
 </div>
