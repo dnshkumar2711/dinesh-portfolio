@@ -1,366 +1,252 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dinesh Kumar | Cloud & DevOps Engineer</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-scroll-behavior:smooth;
-}
-
 body{
+margin:0;
+font-family:Arial, sans-serif;
 background:#0f172a;
-color:#fff;
+color:white;
+line-height:1.6;
 }
 
 header{
-background:linear-gradient(135deg,#0ea5e9,#2563eb);
-padding:20px 10%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-position:sticky;
-top:0;
-z-index:1000;
-}
-
-.logo{
-font-size:28px;
-font-weight:700;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-left:20px;
-font-weight:500;
-}
-
-.hero{
-height:90vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
+padding:60px 20px;
 text-align:center;
-padding:20px;
+background:#1e293b;
 }
 
-.hero h1{
-font-size:4rem;
+header h1{
+font-size:3rem;
 margin-bottom:10px;
 }
 
-.hero span{
+header h2{
 color:#38bdf8;
+font-size:1.5rem;
 }
 
-.hero p{
-max-width:800px;
-font-size:1.2rem;
-margin:20px 0;
-}
-
-.btn{
-display:inline-block;
-padding:12px 24px;
-background:#38bdf8;
-color:#000;
-border-radius:8px;
-text-decoration:none;
-font-weight:600;
-margin:10px;
+.container{
+padding:40px 15%;
 }
 
 section{
-padding:80px 10%;
+margin-bottom:50px;
 }
 
-.section-title{
-text-align:center;
-font-size:2.5rem;
-margin-bottom:40px;
+h2{
 color:#38bdf8;
+margin-bottom:15px;
+border-bottom:1px solid #334155;
+padding-bottom:5px;
 }
 
-.about{
-text-align:center;
-max-width:900px;
-margin:auto;
-line-height:1.8;
-}
-
-.skills-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-}
-
-.skill-card{
+.card{
 background:#1e293b;
-padding:25px;
-border-radius:15px;
-transition:.3s;
+padding:20px;
+border-radius:10px;
+margin-bottom:15px;
 }
 
-.skill-card:hover{
-transform:translateY(-5px);
+ul{
+padding-left:20px;
 }
 
-.skill-card h3{
-color:#38bdf8;
-margin-bottom:10px;
-}
-
-.timeline{
-display:flex;
-flex-direction:column;
-gap:20px;
-}
-
-.exp-card{
-background:#1e293b;
-padding:25px;
-border-radius:15px;
-}
-
-.exp-card h3{
-color:#38bdf8;
-}
-
-.project{
-background:#1e293b;
-padding:30px;
-border-radius:15px;
-text-align:center;
-}
-
-.contact{
-text-align:center;
-}
-
-.contact a{
+a{
 color:#38bdf8;
 text-decoration:none;
 }
 
-footer{
-background:#020617;
-padding:20px;
-text-align:center;
-margin-top:50px;
-}
-
-@media(max-width:768px){
-
-.hero h1{
-font-size:2.5rem;
-}
-
-header{
-flex-direction:column;
-}
-
-nav{
-margin-top:10px;
-}
+.btns a{
+display:inline-block;
+margin:10px;
+padding:10px 20px;
+background:#38bdf8;
+color:black;
+border-radius:5px;
+font-weight:bold;
 }
 </style>
-
 </head>
 
 <body>
 
 <header>
-<div class="logo">DK</div>
+<h1>Dinesh Kumar</h1>
+<h2>Senior Cloud & DevOps Engineer | Azure | AWS | Kubernetes | Linux SME</h2>
+<p>"Building scalable, secure, and automated cloud infrastructure with 10+ years of enterprise IT experience."</p>
 
-<nav>
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#experience">Experience</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
-</nav>
+<div class="btns">
+<a href="https://www.linkedin.com/in/dineshkumar2711/" target="_blank">LinkedIn</a>
+<a href="#">Download Resume</a>
+<a href="https://github.com" target="_blank">GitHub</a>
+</div>
 </header>
 
-<section class="hero" id="home">
+<div class="container">
 
-<h1>Hi, I'm <span>Dinesh Kumar</span></h1>
+<!-- ABOUT -->
+<section>
+<h2>ABOUT ME</h2>
+<div class="card">
+Experienced Senior Cloud & DevOps Engineer with over 10 years of expertise in Linux Administration, Cloud Infrastructure, DevOps Automation, Data Center Operations, and Enterprise Platform Management.
 
-<h2>Senior Cloud & DevOps Engineer</h2>
-
-<p>
-10+ Years of experience in Azure, AWS, Linux Administration,
-Kubernetes, Docker, Terraform, Ansible, CI/CD, VMware,
-Nutanix and Enterprise Infrastructure Engineering.
-</p>
-
-<a class="btn" href="https://www.linkedin.com/in/dineshkumar2711/" target="_blank">
-LinkedIn
-</a>
-
-<a class="btn" href="#">
-Download Resume
-</a>
-
+Specialized in Azure, AWS, Kubernetes, Docker, Terraform, Ansible, CI/CD, VMware, and Nutanix. Proven experience in designing, automating, and maintaining highly available enterprise environments across cloud and on-premises infrastructure.
+</div>
 </section>
 
-<section id="about">
+<!-- SKILLS -->
+<section>
+<h2>CORE SKILLS</h2>
+<div class="card">
 
-<h2 class="section-title">About Me</h2>
+<b>Cloud Platforms</b>
+<ul>
+<li>Microsoft Azure</li>
+<li>Amazon Web Services (AWS)</li>
+<li>Google Cloud Platform (GCP)</li>
+</ul>
 
-<div class="about">
+<b>DevOps & Automation</b>
+<ul>
+<li>Terraform</li>
+<li>Ansible</li>
+<li>Jenkins</li>
+<li>Git</li>
+<li>CI/CD Pipelines</li>
+</ul>
 
-<p>
-Experienced Senior Linux Technical Engineer with over 10 years
-of expertise in cloud infrastructure, DevOps automation,
-data center operations, server administration and enterprise
-platform management.
-</p>
+<b>Containers & Orchestration</b>
+<ul>
+<li>Docker</li>
+<li>Kubernetes</li>
+</ul>
 
-<br>
+<b>Linux & Infrastructure</b>
+<ul>
+<li>RHEL</li>
+<li>CentOS</li>
+<li>Ubuntu</li>
+<li>SUSE</li>
+<li>AIX</li>
+</ul>
 
-<p>
-Specialized in Azure, AWS, Kubernetes, Docker, Terraform,
-Ansible, Jenkins, VMware, Nutanix and Linux environments.
-Passionate about building scalable, secure and automated
-infrastructure solutions.
-</p>
+<b>Monitoring & Backup</b>
+<ul>
+<li>Grafana</li>
+<li>Nagios</li>
+<li>Veeam</li>
+<li>Veritas NetBackup</li>
+</ul>
+
+<b>Virtualization</b>
+<ul>
+<li>VMware ESXi</li>
+<li>Nutanix</li>
+</ul>
+
+<b>Databases</b>
+<ul>
+<li>PostgreSQL</li>
+<li>MySQL</li>
+<li>Oracle</li>
+<li>MongoDB</li>
+<li>SQL Server</li>
+</ul>
 
 </div>
-
 </section>
 
-<section id="skills">
+<!-- EXPERIENCE -->
+<section>
+<h2>PROFESSIONAL EXPERIENCE</h2>
 
-<h2 class="section-title">Skills</h2>
-
-<div class="skills-grid">
-
-<div class="skill-card">
-<h3>Cloud</h3>
-<p>Azure<br>AWS<br>GCP</p>
+<div class="card">
+<h3>Senior Cloud & DevOps Engineer</h3>
+<p>Fulcrum Digital Pvt Ltd | 2024 – Present</p>
+<ul>
+<li>Azure cloud administration</li>
+<li>Kubernetes platform management</li>
+<li>Terraform infrastructure automation</li>
+<li>Linux platform engineering</li>
+<li>DevOps implementation and optimization</li>
+</ul>
 </div>
 
-<div class="skill-card">
-<h3>DevOps</h3>
-<p>Terraform<br>Ansible<br>Jenkins<br>Git<br>CI/CD</p>
+<div class="card">
+<h3>Senior Linux Technical Engineer</h3>
+<p>Precision Informatics | 2024</p>
+<ul>
+<li>AWS Infrastructure Management</li>
+<li>Red Hat Satellite Administration</li>
+<li>Docker & Kubernetes Deployment</li>
+<li>VMware to Nutanix Migration</li>
+<li>Grafana Monitoring Solutions</li>
+</ul>
 </div>
 
-<div class="skill-card">
-<h3>Containers</h3>
-<p>Docker<br>Kubernetes</p>
+<div class="card">
+<h3>System Administrator</h3>
+<p>Cygnus Softek | 2016 – 2024</p>
+<ul>
+<li>CI/CD Pipeline Automation</li>
+<li>Jenkins Administration</li>
+<li>Docker Container Management</li>
+<li>Hadoop Ecosystem Deployment</li>
+<li>GCP Infrastructure Administration</li>
+</ul>
 </div>
 
-<div class="skill-card">
-<h3>Linux</h3>
-<p>RHEL<br>Ubuntu<br>CentOS<br>SUSE<br>AIX</p>
-</div>
-
-<div class="skill-card">
-<h3>Monitoring</h3>
-<p>Grafana<br>Nagios</p>
-</div>
-
-<div class="skill-card">
-<h3>Virtualization</h3>
-<p>VMware ESXi<br>Nutanix</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="experience">
-
-<h2 class="section-title">Experience</h2>
-
-<div class="timeline">
-
-<div class="exp-card">
-<h3>Fulcrum Digital Pvt Ltd</h3>
-<h4>Senior Cloud & DevOps Engineer</h4>
-<p>2024 - Present</p>
-</div>
-
-<div class="exp-card">
-<h3>Precision Informatics</h3>
-<h4>Senior Linux Technical Engineer</h4>
-<p>2024</p>
-</div>
-
-<div class="exp-card">
-<h3>Cygnus Softek</h3>
-<h4>System Administrator</h4>
-<p>2016 - 2024</p>
-</div>
-
-<div class="exp-card">
-<h3>Nyqmind Software Consulting</h3>
-<h4>Linux System Administrator</h4>
-<p>2016</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="projects">
-
-<h2 class="section-title">Featured Project</h2>
-
-<div class="project">
-
-<h3>Vodafone Idea - DC Operational Support</h3>
-
-<br>
-
-<p>
-Infrastructure Monitoring, Linux Administration,
-Cloud Operations, Server Management, Incident Resolution
-and Enterprise Platform Support.
-</p>
-
+<div class="card">
+<h3>Linux System Administrator</h3>
+<p>Nyqmind Software Consulting | 2016</p>
+<ul>
+<li>AWS & Rackspace Administration</li>
+<li>Apache & Tomcat Support</li>
+<li>Nagios Monitoring</li>
+<li>Jenkins Automation</li>
+</ul>
 </div>
 
 </section>
 
-<section id="contact">
+<!-- PROJECT -->
+<section>
+<h2>KEY PROJECT</h2>
+<div class="card">
+<h3>Vodafone Idea</h3>
+<p><b>Role:</b> Cloud & Linux Infrastructure Engineer</p>
+<ul>
+<li>Data Center Operations</li>
+<li>Linux Administration</li>
+<li>Infrastructure Monitoring</li>
+<li>Server Management</li>
+<li>Incident Resolution</li>
+<li>Platform Support</li>
+</ul>
+</div>
+</section>
 
-<h2 class="section-title">Contact</h2>
-
-<div class="contact">
-
-<p>Email: dineshvelmsc@gmail.com</p>
-<br>
-
+<!-- CONTACT -->
+<section>
+<h2>CONTACT</h2>
+<div class="card">
+<p>Email: <a href="mailto:dineshvelmsc@gmail.com">dineshvelmsc@gmail.com</a></p>
 <p>Phone: +91 7904413667</p>
-<br>
-
-<p>
-LinkedIn:
-<a href="https://www.linkedin.com/in/dineshkumar2711/" target="_blank">
-View Profile
-</a>
-</p>
-
+<p>Location: India</p>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/dineshkumar2711/">Profile</a></p>
 </div>
-
 </section>
 
-<footer>
-© 2026 Dinesh Kumar | Senior Cloud & DevOps Engineer
+<footer style="text-align:center;padding:20px;color:#94a3b8;">
+© 2026 Dinesh Kumar | Cloud & DevOps Engineer
 </footer>
+
+</div>
 
 </body>
 </html>
