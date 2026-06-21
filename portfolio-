@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinesh Kumar | Cloud & DevOps Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        header {
+            background: #0a66c2;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        section {
+            background: white;
+            margin-top: 20px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,.1);
+        }
+
+        h2 {
+            color: #0a66c2;
+            margin-bottom: 15px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        .skills span {
+            display: inline-block;
+            background: #0a66c2;
+            color: white;
+            padding: 8px 15px;
+            margin: 5px;
+            border-radius: 20px;
+        }
+
+        .contact a {
+            text-decoration: none;
+            color: #0a66c2;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Dinesh Kumar</h1>
+    <p>Senior Cloud & DevOps Engineer | Azure | AWS | Linux SME</p>
+</header>
+
+<div class="container">
+
+    <section>
+        <h2>About Me</h2>
+        <p>
+            Experienced Senior Cloud & DevOps Engineer with 10+ years of expertise in
+            Linux Administration, Azure, AWS, Kubernetes, Docker, Terraform,
+            Ansible, CI/CD, and Enterprise Infrastructure Management.
+            Passionate about cloud automation, scalability, and modern DevOps practices.
+        </p>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <div class="skills">
+            <span>Azure</span>
+            <span>AWS</span>
+            <span>Linux</span>
+            <span>Docker</span>
+            <span>Kubernetes</span>
+            <span>Terraform</span>
+            <span>Ansible</span>
+            <span>Jenkins</span>
+            <span>Git</span>
+            <span>Grafana</span>
+            <span>Nagios</span>
+            <span>VMware</span>
+            <span>Nutanix</span>
+            <span>GCP</span>
+        </div>
+    </section>
+
+    <section>
+        <h2>Professional Experience</h2>
+
+        <h3>Senior Cloud & DevOps Engineer – Fulcrum Digital</h3>
+        <p>Feb 2024 - Present</p>
+        <ul>
+            <li>Administer Linux-based Azure environments.</li>
+            <li>Automate infrastructure using Terraform and Ansible.</li>
+            <li>Manage Kubernetes and Docker platforms.</li>
+            <li>Implement secure DevOps solutions and cloud best practices.</li>
+        </ul>
+
+        <h3>Senior Linux Technical Engineer – Precision Informatics</h3>
+        <p>2024</p>
+        <ul>
+            <li>Managed AWS EC2, S3, VPC, CloudFormation.</li>
+            <li>Administered Red Hat, SUSE, Ubuntu, CentOS servers.</li>
+            <li>Implemented monitoring, backup, and virtualization solutions.</li>
+        </ul>
+
+        <h3>System Administrator – Cygnus Softek</h3>
+        <p>2016 - 2024</p>
+        <ul>
+            <li>Built CI/CD pipelines using Jenkins and Git.</li>
+            <li>Managed Hadoop, Docker, Linux, and cloud infrastructure.</li>
+            <li>Supported enterprise databases and web applications.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Project</h2>
+        <h3>Vodafone Idea – DC Operational Support</h3>
+        <p>
+            Infrastructure monitoring, Linux administration, cloud operations,
+            server management, automation, and enterprise support.
+        </p>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <ul>
+            <li>M.Sc Information Technology</li>
+            <li>B.Sc Information Technology</li>
+        </ul>
+    </section>
+
+    <section class="contact">
+        <h2>Contact</h2>
+        <p>Email: dineshvelmsc@gmail.com</p>
+        <p>Phone: +91-7904413667</p>
+        <p>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/dineshkumar2711/" target="_blank">
+                linkedin.com/in/dineshkumar2711
+            </a>
+        </p>
+    </section>
+
+</div>
+
+<footer>
+    © 2026 Dinesh Kumar | Cloud & DevOps Engineer
+</footer>
+
+</body>
+</html>
