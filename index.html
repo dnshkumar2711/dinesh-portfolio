@@ -6,19 +6,94 @@
 
 <title>Dinesh Kumar | Cloud Architect</title>
 
-<link rel="shortcut icon" href="assets/img/favicon.png">
-
 <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" rel="stylesheet">
 
-<link rel="stylesheet" href="assets/css/styles.css">
+<style>
+
+/* ===== YOUR CSS ADDED ===== */
+
+body{
+margin:0;
+font-family:Arial;
+background:#0f172a;
+color:white;
+}
+
+header{
+background:#1e293b;
+padding:15px;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.nav__menu{
+display:flex;
+gap:20px;
+list-style:none;
+justify-content:center;
+padding:0;
+}
+
+.nav__menu a{
+color:white;
+text-decoration:none;
+}
+
+section{
+padding:60px 20px;
+max-width:900px;
+margin:auto;
+}
+
+h2{
+color:#38bdf8;
+}
+
+ul li{
+margin:5px 0;
+}
+
+/* ===== EXTRA CLEAN UI IMPROVEMENTS ===== */
+
+h1,h3{
+text-align:center;
+}
+
+a{
+color:#38bdf8;
+text-decoration:none;
+font-weight:bold;
+}
+
+.center{
+text-align:center;
+}
+
+.card{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+margin-top:15px;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#0f172a;
+border-top:1px solid #1e293b;
+margin-top:40px;
+}
+
+</style>
 </head>
 
 <body>
 
-<!--==================== HEADER ====================-->
-<header class="header" id="header">
-<nav class="nav container">
-<a href="#" class="nav__logo">Dinesh Kumar</a>
+<!-- HEADER -->
+<header>
+<h1 class="center">Dinesh Kumar</h1>
+<p class="center">Senior Cloud & DevOps Engineer</p>
 
 <ul class="nav__menu">
 <li><a href="#home">Home</a></li>
@@ -27,65 +102,45 @@
 <li><a href="#experience">Experience</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
-</nav>
 </header>
 
-<main>
-
-<!--==================== HOME ====================-->
-<section class="home section" id="home">
-
-<div class="home__container container">
-
-<h1>Hi, I'm Dinesh Kumar</h1>
-
-<h3>Senior Cloud & DevOps Engineer</h3>
-
+<!-- HOME -->
+<section id="home">
+<div class="center">
+<h2>Cloud Architect Portfolio</h2>
 <p>
-Azure | AWS | Kubernetes | Linux SME
+Azure | AWS | Kubernetes | Terraform | Linux SME
 </p>
 
 <p>
-"Building scalable, secure, and automated cloud infrastructure with 10+ years of enterprise IT experience."
+10+ Years Experience in Cloud Infrastructure & DevOps Automation
 </p>
-
-<a href="mailto:dineshvelmsc@gmail.com">Email Me</a>
-<a href="https://www.linkedin.com/in/dineshkumar2711/" target="_blank">LinkedIn</a>
-
 </div>
-
 </section>
 
-<!--==================== ABOUT ====================-->
-<section class="about section" id="about">
-
+<!-- ABOUT -->
+<section id="about">
 <h2>ABOUT ME</h2>
-
-<p>
-Experienced Senior Cloud & DevOps Engineer with over 10+ years of expertise in Linux Administration,
-Cloud Infrastructure, DevOps Automation, Data Center Operations, and Enterprise Platform Management.
-</p>
-
-<p>
-Specialized in Azure, AWS, Kubernetes, Docker, Terraform, Ansible, CI/CD, VMware, and Nutanix.
-Strong experience in designing and managing highly available enterprise infrastructure.
-</p>
-
+<div class="card">
+Experienced Senior Cloud & DevOps Engineer with 10+ years in Linux,
+Cloud Infrastructure, DevOps Automation, Data Center Operations,
+and Enterprise Systems.
+</div>
 </section>
 
-<!--==================== SKILLS ====================-->
-<section class="skills section" id="skills">
-
+<!-- SKILLS -->
+<section id="skills">
 <h2>CORE SKILLS</h2>
 
+<div class="card">
 <ul>
 <li>Azure</li>
 <li>AWS</li>
 <li>GCP</li>
 <li>Terraform</li>
 <li>Ansible</li>
-<li>Docker</li>
 <li>Kubernetes</li>
+<li>Docker</li>
 <li>Jenkins</li>
 <li>Git</li>
 <li>Linux (RHEL, Ubuntu, CentOS, SUSE, AIX)</li>
@@ -93,93 +148,46 @@ Strong experience in designing and managing highly available enterprise infrastr
 <li>Nagios</li>
 <li>VMware</li>
 <li>Nutanix</li>
-<li>MySQL / PostgreSQL / Oracle / MongoDB</li>
 </ul>
-
+</div>
 </section>
 
-<!--==================== EXPERIENCE ====================-->
-<section class="experience section" id="experience">
+<!-- EXPERIENCE -->
+<section id="experience">
+<h2>EXPERIENCE</h2>
 
-<h2>PROFESSIONAL EXPERIENCE</h2>
-
-<h3>Fulcrum Digital Pvt Ltd</h3>
+<div class="card">
+<h3>Fulcrum Digital</h3>
 <p>Senior Cloud & DevOps Engineer | 2024 – Present</p>
-<ul>
-<li>Azure cloud administration</li>
-<li>Kubernetes platform management</li>
-<li>Terraform automation</li>
-<li>Linux infrastructure engineering</li>
-</ul>
+</div>
 
+<div class="card">
 <h3>Precision Informatics</h3>
-<p>Senior Linux Technical Engineer | 2024</p>
-<ul>
-<li>AWS infrastructure management</li>
-<li>VMware & Nutanix migration</li>
-<li>Grafana monitoring setup</li>
-</ul>
+<p>Senior Linux Engineer | 2024</p>
+</div>
 
+<div class="card">
 <h3>Cygnus Softek</h3>
 <p>System Administrator | 2016 – 2024</p>
-<ul>
-<li>CI/CD pipelines using Jenkins & Git</li>
-<li>Docker & Hadoop ecosystem</li>
-<li>GCP infrastructure management</li>
-</ul>
-
-<h3>Nyqmind Software Consulting</h3>
-<p>Linux System Administrator | 2016</p>
-<ul>
-<li>AWS & Rackspace administration</li>
-<li>Apache, Tomcat, Nagios monitoring</li>
-</ul>
+</div>
 
 </section>
 
-<!--==================== PROJECT ====================-->
-<section class="project section">
-
-<h2>KEY PROJECT</h2>
-
-<h3>Vodafone Idea</h3>
-
-<ul>
-<li>Data Center Operations</li>
-<li>Linux Administration</li>
-<li>Infrastructure Monitoring</li>
-<li>Server Management</li>
-<li>Incident Resolution</li>
-</ul>
-
-</section>
-
-<!--==================== CONTACT ====================-->
-<section class="contact section" id="contact">
-
+<!-- CONTACT -->
+<section id="contact">
 <h2>CONTACT</h2>
 
-<p>Email: dineshvelmsc@gmail.com</p>
+<div class="card">
+<p>Email: <a href="mailto:dineshvelmsc@gmail.com">dineshvelmsc@gmail.com</a></p>
 <p>Phone: +91 7904413667</p>
-<p>Location: India</p>
-
-<p>
-LinkedIn:
-<a href="https://www.linkedin.com/in/dineshkumar2711/" target="_blank">
-Profile
-</a>
-</p>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/dineshkumar2711/" target="_blank">Profile</a></p>
+</div>
 
 </section>
 
-</main>
-
 <footer>
-<p>© 2026 Dinesh Kumar | Cloud & DevOps Engineer</p>
+© 2026 Dinesh Kumar | Cloud & DevOps Engineer
 </footer>
-
-<script src="assets/js/main.js"></script>
-<script src="assets/js/index.js"></script>
 
 </body>
 </html>
